@@ -17,6 +17,6 @@ namespace TigerTix.Controllers
         public IActionResult Index(IndexViewModel model)
         {
             return View();
-        }
+        }   
     }
 }
