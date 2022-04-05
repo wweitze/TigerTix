@@ -8,26 +8,31 @@
 </head>
 
 <body>
-    <h1>Post Events</h1>
+    <h1 style="color:black">Post an Event</h1>
 
     <form method="post">
-        <label>Title:</label>
+        <label style="color:darkorange">Title:</label>
         <br />
         <input type="text" name="title" />
         <br />
-        <label>Description:</label>
+        <label style="color:darkorange">Type:</label>
+        <br />
+        <input type="text" name="type" />
+        <br />
+        <label style="color:darkorange">Description:</label>
         <br />
         <input type="text" name="desc" />
         <br />
-        <label>Date:</label>
+        <label style="color:darkorange">Date:</label>
         <br />
         <input type="text" name="date" />
         <br />
-        <label>Venue:</label>
+        <label style="color:darkorange">Venue:</label>
         <br />
         <input type="text" name="venue" />
         <br />
         <input type="submit" value="Store Event" />
+        <a href="/App/Index" style="color:darkorange"><input type="button" value= "Home Page" /> </a>
     </form>
 </body>
 </html>

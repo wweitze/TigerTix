@@ -12,6 +12,8 @@ namespace TigerTix.Web.Controllers
 {
     public class AppController : Controller
     {
+
+
         public IActionResult Index()
         {
             return View();
@@ -58,6 +60,18 @@ namespace TigerTix.Web.Controllers
             //LINQ Query
             var results = from u in _eventRepository.GetAllEvents() select u;
             return View("ShowEvents",results.ToList());
+        }
+
+        public IActionResult RemoveEvents()
+        {
+            return View("RemoveEvents");
+        }
+
+        [HttpPost("/App/RemoveEvents")]
+        public IActionResult RemoveEvents(int ID)
+        {
+            _eventRepository.DeleteEvent(_eventRepository.GetEventbyTitle(ID));
+            return ShowEvents();
         }
     }
 }

@@ -33,11 +33,12 @@ namespace TigerTix.Web.Data
         }
 
         // return a single user by ID
-        /*public Event GetEventbyTitle(string eventTitle)
+        public Event GetEventbyTitle(int eventId)
         {
-            var event = (from u in _context.Events where u.title == eventTitle select u).FirstOrDefault();
-            return event;
-        } */
+            var target = (from u in _context.Events where u.Id == eventId select u).FirstOrDefault();
+
+            return target;
+        } 
 
         // Update a event
         public void UpdateEvent(Event ev)

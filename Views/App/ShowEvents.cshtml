@@ -1,17 +1,33 @@
 ﻿@model IEnumerable<Event>
 
-<title>Tiger Tix: Show Users</title>
+<title>Tiger Tix: Show Events</title>
 
-<h1>Users</h1>
-
+<h1>Events</h1>
+<br />
+<br />
+<head>
+    <style type="text/css">
+    <!--
+    .tab {
+        margin-left: 30px;
+    }
+    -->
+</style></head>
 <u1>
     @foreach (var u in Model)
-            {
-                <li>@u.title</li>
-                <li>@u.venue</li>
-                <li>@u.desc</li>
-                <li>@u.desc</li>
-            }
+    {
+        <h2 style="color:black" class="tab">Event ID: @u.Id</h2>
+        <br />
+        <h2 style="color:darkorange" class="tab">@u.title</h2>
+        <h2 style="color:darkorange" class="tab">Event Type: @u.type</h2>
+        <h3 style="color:darkorange" class="tab">Venue: @u.venue</h3>
+        <h3 style="color:darkorange" class="tab">Description: @u.desc</h3>
+        <h4 style="color:darkorange" class="tab">@u.date</h4>
+        <br />
+        <br />
+    }
+    <a href="/App/Index" style="color:darkorange"><input type="button" value="Home Page" /> </a>
+    <a href="/App/RemoveEvents" style="color:darkorange"><input type="button" value="Remove an Event" /> </a>
 </u1>
 
 <br />

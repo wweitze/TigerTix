@@ -67,3 +67,5 @@ C:\Users\davis\Source\Repos\TigerTix\obj\Debug\net5.0\ref\TigerTix.Web.dll
 C:\Users\davis\Source\Repos\TigerTix\obj\Debug\net5.0\TigerTix.Web.pdb
 C:\Users\davis\Source\Repos\TigerTix\obj\Debug\net5.0\TigerTix.Web.genruntimeconfig.cache
 C:\Users\davis\source\repos\TigerTix\obj\Debug\net5.0\Razor\Views\App\PostEvent.cshtml.g.cs
+C:\Users\davis\source\repos\TigerTix\obj\Debug\net5.0\Razor\Views\App\ShowEvents.cshtml.g.cs
+C:\Users\davis\source\repos\TigerTix\obj\Debug\net5.0\Razor\Views\App\RemoveEvents.cshtml.g.cs

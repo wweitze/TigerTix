@@ -8,26 +8,32 @@
 <head>
     <title> TigerTix: @ViewBag.Title</title>
 </head>
-    <body>
-        <h1>Sign Up</h1>
-
-        <form method="post">
-            <label>Username:</label>
-            <br />
-            <input type="text" name="username" />
-            <br />
-            <label>Firstname:</label>
-            <br />
-            <input type="text" name="firstname" />
-            <br />
-            <label>Lastname:</label>
-            <br />
-            <input type="text" name="lastname" />
-            <br />
-            <input type="submit" value="Store Name" />
-            <br />
-            <a href ="/App/Showusers"><input type="button" value="Show Users" /> </a>
-            <a href ="/App/Postevent"><input type="button" value="Post an Event"/> </a>
-        </form>
-    </body>
+<body>
+    <h1 style="color:black">Sign Up</h1>
+    <form method="post">
+        <label style="color:darkorange">Username:</label>
+        <br />
+        <input type="text" name="username" />
+        <br />
+        <label style="color:darkorange">First Name:</label>
+        <br />
+        <input type="text" name="firstname" />
+        <br />
+        <label style="color:darkorange">Last Name:</label>
+        <br />
+        <input type="text" name="lastname" />
+        <br />
+        <input type="submit" value="Store Name" />
+        <br />
+        <br />
+    </form>
+    <h2 style="color:black">External Pages:</h2>>
+    <a href="/App/Showusers" style="color:darkorange"><input type="button" value="Show Users" /> </a>
+    <br />
+    <a href="/App/Postevent" style="color:darkorange"><input type="button" value="Post an Event" /> </a>
+    <br />
+    <a href="/App/Showevents" style="color:darkorange"><input type="button" value="Show All Events" /> </a>
+    <br />
+    <a href="/App/RemoveEvents" style="color:darkorange"><input type="button" value="Remove an Event" /> </a>
+</body>
 </html>

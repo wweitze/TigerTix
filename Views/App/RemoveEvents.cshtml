@@ -1,0 +1,23 @@
+﻿@model IEnumerable<Event>
+@{
+
+}
+
+<html>
+<head>
+    <title>TigerTix: Remove Events</title>
+</head>
+
+<body>
+    <h1 style="color:black">Remove an Event</h1>
+    <form method="post">
+        <label style="color:darkorange">Event to be Removed:</label>
+        <br />
+        <input type="number" name="ID" />
+        <input type="submit" value="Remove Event" />
+        <br />
+    </form>
+    <a href="/App/Index" style="color:darkorange"><input type="button" value="Home Page" /> </a>
+    <a href="/App/Showevents" style="color:darkorange"><input type="button" value="Show All Events" /> </a>
+</body>
+</html>
