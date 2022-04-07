@@ -9,24 +9,23 @@
     <title> TigerTix: @ViewBag.Title</title>
 </head>
 <body>
-    <h1 style="color:black">Sign Up</h1>
+    <h1 style="color:black">Tiger Tix Sign In</h1>
     <form method="post">
         <label style="color:darkorange">Username:</label>
         <br />
-        <input type="text" name="username" />
+        <input type="text" name="UserName" />
         <br />
-        <label style="color:darkorange">First Name:</label>
+        <label style="color:darkorange">Password:</label>
         <br />
-        <input type="text" name="firstname" />
+        <input type="password" name="Password" />
         <br />
-        <label style="color:darkorange">Last Name:</label>
-        <br />
-        <input type="text" name="lastname" />
-        <br />
-        <input type="submit" value="Store Name" />
-        <br />
+        <input type="submit" value="Sign In" />
         <br />
     </form>
+    <br />
+    <h3 style="color:black">Dont have an Account?</h3>>
+    <a href="/App/MakeAnAccount" style="color:black"><input type="button" value="Create an Account!" /> </a>
+    <br />
     <h2 style="color:black">External Pages:</h2>>
     <a href="/App/Showusers" style="color:darkorange"><input type="button" value="Show Users" /> </a>
     <br />
@@ -35,5 +34,8 @@
     <a href="/App/Showevents" style="color:darkorange"><input type="button" value="Show All Events" /> </a>
     <br />
     <a href="/App/RemoveEvents" style="color:darkorange"><input type="button" value="Remove an Event" /> </a>
+    <br />
+    <a href="/App/RemoveUsers" style="color:darkorange"><input type="button" value="Remove a User" /> </a>
+    <br />
 </body>
 </html>

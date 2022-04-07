@@ -20,9 +20,37 @@ namespace TigerTix.Web.Controllers
         }
 
         [HttpPost("/")]
-        public IActionResult Index(User user)
+        public IActionResult Index(string UserName, string Password)
         {
-            _userRepository.SaveUser(user);
+            User target = _userRepository.GetUserByUserName(UserName);
+            if(target != null)
+            {
+                if (_userRepository.verifyLogin(target, Password))
+                {
+                    return View("AccountPage",target);
+                }
+                else
+                {
+                    return View();
+                }
+            }
+            else
+            {
+                return View();
+            }
+        }
+
+        
+
+        public IActionResult MakeAnAccount()
+        {
+            return View("MakeAnAccount");
+        }
+
+        [HttpPost("/App/MakeAnAccount")]
+        public IActionResult MakeAnAccount(User target)
+        {
+            _userRepository.SaveUser(target);
             _userRepository.SaveAll();
 
             return View();
@@ -71,7 +99,21 @@ namespace TigerTix.Web.Controllers
         public IActionResult RemoveEvents(int ID)
         {
             _eventRepository.DeleteEvent(_eventRepository.GetEventbyTitle(ID));
+            _eventRepository.SaveAll();
             return ShowEvents();
+        }
+
+        public IActionResult RemoveUsers()
+        {
+            return View("RemoveUsers");
+        }
+
+        [HttpPost("/App/RemoveUsers")]
+        public IActionResult RemoveUsers(int ID) 
+        {
+            _userRepository.DeleteUser(_userRepository.GetUsersByID(ID));
+            _userRepository.SaveAll();
+            return ShowUsers();
         }
     }
 }
