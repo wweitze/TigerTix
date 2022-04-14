@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using TigerTix.Web.Data.Entities;
-
+    
 namespace TigerTix.Web.Data
 {
     public class UserRepository : IUserRepository
@@ -29,6 +29,25 @@ namespace TigerTix.Web.Data
             var users = from u in _context.Users select u;
 
             return users.ToList();
+        }
+
+        public User GetUserByUserName(string UserName)
+        {
+            var user = (from u in _context.Users where String.Equals(u.UserName,UserName)select u).FirstOrDefault();
+
+            return user;
+        }
+
+        public bool verifyLogin(User target, string Password)
+        {
+            if(String.Equals(target.Password, Password))
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
 
         // return a single user by ID
