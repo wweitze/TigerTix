@@ -32,13 +32,21 @@ namespace TigerTix.Web.Data
             return events.ToList();
         }
 
-        // return a single user by ID
+        // return a single event by ID
         public Event GetEventbyTitle(int eventId)
         {
             var target = (from u in _context.Events where u.Id == eventId select u).FirstOrDefault();
 
             return target;
-        } 
+        }
+
+        public IEnumerable<Event> GetEventsByCoordinator(int userId)
+        {
+            var list = (from u in _context.Events where u.coordId == userId select u);
+
+            return list;
+
+        }
 
         // Update a event
         public void UpdateEvent(Event ev)

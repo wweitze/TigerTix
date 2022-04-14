@@ -9,6 +9,7 @@ namespace TigerTix.Web.Data.Entities
         public string desc { get; set; }
         public string date { get; set; }
         public string venue { get; set; }
+        public int coordId { get; set; }
     }
 }
 

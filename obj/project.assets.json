@@ -5760,19 +5760,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\davis\\.nuget\\packages\\": {}
+    "C:\\Users\\clemen8\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\davis\\Source\\Repos\\TigerTix\\TigerTix.Web.csproj",
+      "projectUniqueName": "C:\\Users\\clemen8\\Source\\Repos\\wweitze\\TigerTix\\TigerTix.Web.csproj",
       "projectName": "TigerTix.Web",
-      "projectPath": "C:\\Users\\davis\\Source\\Repos\\TigerTix\\TigerTix.Web.csproj",
-      "packagesPath": "C:\\Users\\davis\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\davis\\Source\\Repos\\TigerTix\\obj\\",
+      "projectPath": "C:\\Users\\clemen8\\Source\\Repos\\wweitze\\TigerTix\\TigerTix.Web.csproj",
+      "packagesPath": "C:\\Users\\clemen8\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\clemen8\\Source\\Repos\\wweitze\\TigerTix\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\davis\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\clemen8\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -5827,7 +5827,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.405\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
       }
     }
   }

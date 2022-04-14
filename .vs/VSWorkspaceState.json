@@ -1,7 +1,12 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Data",
+    "\\Data\\Entities",
+    "\\obj\\Debug",
+    "\\Views",
+    "\\Views\\App"
   ],
-  "SelectedNode": "\\TigerTix.Web.sln",
+  "SelectedNode": "\\Data\\Entities\\User.cs",
   "PreviewInSolutionExplorer": false
 }

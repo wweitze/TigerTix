@@ -7,8 +7,8 @@ namespace TigerTix.Web.Data
     {
         void DeleteEvent(Event ev);
         IEnumerable<Event> GetAllEvents();
-
-        Event GetEventbyTitle(int ID);
+        Event GetEventbyTitle(int eventId);
+        IEnumerable<Event> GetEventsByCoordinator(int userId);
         void SaveEvent(Event ev);
         void UpdateEvent(Event ev);
         bool SaveAll();
