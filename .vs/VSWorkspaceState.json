@@ -3,10 +3,9 @@
     "",
     "\\Data",
     "\\Data\\Entities",
-    "\\obj\\Debug",
     "\\Views",
     "\\Views\\App"
   ],
-  "SelectedNode": "\\Data\\Entities\\User.cs",
+  "SelectedNode": "\\TigerTix.Web.sln",
   "PreviewInSolutionExplorer": false
 }

@@ -1,13 +1,25 @@
-﻿@model IndexViewModel
+﻿@model User
 @{
     ViewBag.Title = "Event Coordinator Home";
 }
 <!DOCTYPE html>
 <html>
     <head>
-        <title>TigerTix: Coordinate Your Events</title>
+        <title>TigerTix: Event Coordination</title>
     </head>
     <body>
+        <h1 style = "color:black">Welcome back, @Model.UserName!</h1>
+        <br />
+        <h2 style="color:black">Event Coordinator Actions</h2>
+            <a href="/App/Postevent" style="color:darkorange"><input type="button" value= "Post an Event" /></a>
+            <br />
+            <a href="/App/ShowYourEvents" style="color:darkorange"><input type = "button" value="Your Events"/></a>
+            <br />
+            <a href="/App/EditEvent" style="color:darkorange"><input type = "button" value="Edit an Event" /></a>
+            <br />
+            <a href="/App/RemoveYourEvent" style="color:darkorange"><input type = "button" value="Remove an Event"/> </a>
+            <br />
+
 
     </body>
 </html>

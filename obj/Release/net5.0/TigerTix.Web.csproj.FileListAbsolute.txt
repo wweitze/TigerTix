@@ -68,3 +68,8 @@ C:\Users\clemen8\Source\Repos\wweitze\TigerTix\obj\Release\net5.0\refint\TigerTi
 C:\Users\clemen8\Source\Repos\wweitze\TigerTix\obj\Release\net5.0\TigerTix.Web.pdb
 C:\Users\clemen8\Source\Repos\wweitze\TigerTix\obj\Release\net5.0\TigerTix.Web.genruntimeconfig.cache
 C:\Users\clemen8\Source\Repos\wweitze\TigerTix\obj\Release\net5.0\ref\TigerTix.Web.dll
+C:\Users\clemen8\Source\Repos\wweitze\TigerTix\obj\Release\net5.0\Razor\Views\App\AccountPage.cshtml.g.cs
+C:\Users\clemen8\Source\Repos\wweitze\TigerTix\obj\Release\net5.0\Razor\Views\App\CoordinatorHome.cshtml.g.cs
+C:\Users\clemen8\Source\Repos\wweitze\TigerTix\obj\Release\net5.0\Razor\Views\App\MakeAnAccount.cshtml.g.cs
+C:\Users\clemen8\Source\Repos\wweitze\TigerTix\obj\Release\net5.0\Razor\Views\App\RemoveUsers.cshtml.g.cs
+C:\Users\clemen8\Source\Repos\wweitze\TigerTix\bin\Release\net5.0\postman\collections\TigerTix API Documenation_80d85ba0-5bda-4e80-9f70-6d7ada14b37d.json
