@@ -1,0 +1,29 @@
+﻿@model IEnumerable<User>
+
+<!DOCTYPE html>
+<html>
+<title>Tiger Tix: Account Details</title>
+<br />
+<br />
+<head>
+    <style type="text/css">
+    <!--
+    .tab {
+        margin-left: 30px;
+    }
+    -->
+</style></head>
+<u1>
+    @foreach (var u in Model)
+    {
+
+        <h2 style="color:darkorange" class="tab">Username: @u.UserName</h2>
+        <h2 style="color:darkorange" class="tab">Password: @u.Password</h2>
+        <h2 style="color:darkorange" class="tab">FullName: @u.FirstName @u.LastName</h2>
+        <b />
+    }
+    <a href="/App/Index" style="color:darkorange"><input type="button" value="Home Page" /> </a>
+</u1>
+
+<br />
+</html>

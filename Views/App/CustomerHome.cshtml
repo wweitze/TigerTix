@@ -1,0 +1,23 @@
+﻿@model User
+@{
+    ViewBag.Title = "Customer Home";
+}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TigerTix: Customer</title>
+    </head>
+    <body>
+        <h1 style = "color:black">Welcome back, @Model.UserName!</h1>
+        <br />
+        <h2 style="color:black">Availible Actions</h2>
+            <a href="/App/TicketHoldings" style="color:darkorange"><input type="button" value= "Veiw Your Ticket Holdings" /></a>
+            <br />
+            <a href="/App/ShowEvents" style="color:darkorange"><input type = "button" value="Find Events"/></a>
+            <br />
+            <a href="/App/AccountDetails" style="color:darkorange"><input type = "button" value="Veiw Your Account Details" /></a>
+            <br />
+            <a href="/App/AccountDetails" style="color:darkorange"><input type = "button" value="Update Your Account Details"/> </a>
+            <br />
+    </body>
+</html>
