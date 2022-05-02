@@ -103,6 +103,19 @@ namespace TigerTix.Web.Controllers
             return ShowEvents();
         }
 
+        public IActionResult SearchEvents()
+        {
+            return View("SearchEvents");
+        }
+
+        [HttpPost("/App/SearchEvents")]
+        public IActionResult SearchEvents(int ID)
+        {
+            var requestdEvent = _eventRepository.GetEventbyTitle(ID);
+            _eventRepository.SaveAll();
+            return View(requestdEvent);
+        }
+
         public IActionResult RemoveUsers()
         {
             return View("RemoveUsers");
